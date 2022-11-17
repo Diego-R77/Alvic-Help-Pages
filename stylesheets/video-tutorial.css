@@ -1,0 +1,48 @@
+:root{
+	--bs-body-font-size: 0.9rem;
+}
+
+.p-4 {
+	padding: 2rem!important;
+}
+
+.g-5, .gx-5 {
+    --bs-gutter-x: 2.3rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.8rem;
+}
+
+.table {
+	--bs-table-hover-bg: rgba(0, 0, 0, 0.025);
+}
+
+.table.indice td {
+	width: 100%;
+	padding: 0;
+}
+
+.table.indice td:first-child {
+	padding-left: 0;
+}
+
+.table.indice td:last-child {
+	padding-right: 0;
+	text-align: right;
+}
+
+.table.indice a {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0;
+	text-decoration: none;
+}
+
+.col-main {
+	flex-grow: 1;
+}
+
+.col-indice {
+	width: clamp(300px, 25%, 350px);
+}
