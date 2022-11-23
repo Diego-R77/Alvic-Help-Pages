@@ -18,6 +18,11 @@
 	--bs-table-hover-bg: rgba(0, 0, 0, 0.025);
 }
 
+.table.indice {
+	position: absolute;
+	width: 97%;
+}
+
 .table.indice td {
 	width: 100%;
 	padding: 0;
@@ -41,8 +46,35 @@
 
 .col-main {
 	flex-grow: 1;
+	/* background-color: gray; */
 }
 
 .col-indice {
+	display: flex;
+	flex-direction: column;
 	width: clamp(300px, 25%, 350px);
+	/* background-color: orange; */
+}
+
+.indice-container {
+	overflow-y: scroll;
+    height: 100%;
+    position: relative;
+}
+
+@media (max-width: 1227px) {
+	.col-indice {
+		display: block;
+		/* background-color: orange; */
+	}
+
+	.indice-container {
+		overflow: auto;
+    	height: unset;
+	}
+
+	.table.indice {
+		position: relative;
+    	width: 100%;
+	}
 }
